@@ -17,7 +17,7 @@ You can go to the top level directory of this project and run:
 
     scrapy crawl [spider name]
 
-In this project, the spider name can be `Flickr`(no bucket). But you need to edit the file `spiders/xxx_spider.py` before you run the command above.  
+In this project, the spider name can be `Flickr`, `Instagram`(no buckets). But you need to edit the file `spiders/xxx_spider.py` before you run the command above.  
 
 For ***Flickr***, you should have your own `api_key` (see [here](https://www.flickr.com/services/apps/create/apply/)), and decide your search tag. If you want to change other params, look at the file carefully or get help from [Flickr API](https://www.flickr.com/services/api/). 
 
@@ -32,7 +32,9 @@ For ***Instagram***, you should have your own `access_token` (see [here](http://
     class InstagramSpider(scrapy.Spider):
         name = "Instagram"
         tag='your tag'
-        access_token='your access_token'
+        params = {
+        	'access_token': 'your access_token',
+    	}
 
 You will get a `csv` folder that stores the crawl result(named with the beginning time of the program) and the images downloaded to folder `data` when the program finished.  
 If you want to change the image download directory, edit the last line in file `settings.py`.  
