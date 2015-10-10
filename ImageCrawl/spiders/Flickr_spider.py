@@ -4,8 +4,8 @@ from ImageCrawl.items import ImagecrawlItem
 
 class FlickrSpider(scrapy.Spider):
     name = "Flickr"
-    tag='fun'
-    api_key='e3d5d997be5fc4eeb0f76faa4a09f39b'
+    tag=''
+    api_key=''
     params = {
         'method':'flickr.photos.search',
         'api_key': api_key,

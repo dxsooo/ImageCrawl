@@ -27,4 +27,4 @@ For Flickr, you should have your own `api_key` (see [here](https://www.flickr.co
 You will get a `csv` folder that stores the crawl result(named with the beginning time of the program) and the images downloaded to folder `data` when the program finished.  
 If you want to change the image download directory, edit the last line in file `settings.py`.  
 
-*Note* the program works with GoAgent by default,please ensure your GoAgent works well and pre-opened, change or disable GoAgent, see [this](http://snipplr.com/view/74665/using-goagent-agent-in-scrapy/).
+**Note** the program works with GoAgent by default,please ensure your GoAgent works well and pre-opened, change or disable GoAgent, see [this](http://snipplr.com/view/74665/using-goagent-agent-in-scrapy/).
