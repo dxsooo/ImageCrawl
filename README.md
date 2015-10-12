@@ -1,7 +1,7 @@
 # ImageCrawl
 
 ## Overview
-Based on [Scrapy](https://github.com/scrapy/scrapy), ImageCrawl is a web image crawler for websites.   
+Based on [Scrapy](https://github.com/scrapy/scrapy), ImageCrawl is a web image crawler that outputs images' origin url and downloads images automatically.  
 Recently supports:  
 
 * [Flickr](https://www.flickr.com/)  
