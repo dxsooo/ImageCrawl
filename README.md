@@ -43,7 +43,7 @@ For ***Google Image Search***, you should decide your search key word. If you wa
         name = "GoogleSearch"
         key_word='your key_word'
 
-You will get a `csv` folder that stores the crawl result(named with the beginning time of the program) and the images downloaded to folder `data` when the program finished.  
+You will get a `csv` folder that stores the crawl result(named with the beginning time of the program) and the images would be downloaded to folder `data` when the program finished.  
 If you want to change the image download directory, edit the last line in file `settings.py`:  
 
     IMAGES_STORE = 'data'
