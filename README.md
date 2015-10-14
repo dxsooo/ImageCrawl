@@ -18,7 +18,7 @@ You can go to the top level directory of this project and run:
 
     scrapy crawl [spider name]
 
-In this project, the spider name can be `Flickr`, `Instagram`, `GoogleSearch`(no buckets). But you need to edit the file `ImageCrawl/spiders/xxx_spider.py` before you run the command above.  
+In this project, the spider name can be `Flickr`, `Instagram`, `GoogleSearch`(no brackets). But you need to edit the file `ImageCrawl/spiders/xxx_spider.py` before you run the command above.  
 
 For ***Flickr***, you should have your own `api_key` (see [here](https://www.flickr.com/services/apps/create/apply/)), and decide your search tag. If you want to change other params, look at the file carefully or get help from [Flickr API](https://www.flickr.com/services/api/). 
 
