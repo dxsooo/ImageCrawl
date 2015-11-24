@@ -7,6 +7,7 @@ Recently supports:
 * [Flickr](https://www.flickr.com/)  
 * [Instagram](https://instagram.com/)
 * [Google Image Search](https://www.google.com/imghp)
+* [Bing Image Search](https://www.bing.com/images)
 
 ## Requirements  
 * Python 2.7
@@ -18,7 +19,7 @@ You can go to the top level directory of this project and run:
 
     scrapy crawl [spider name]
 
-In this project, the spider name can be `Flickr`, `Instagram`, `GoogleSearch`(no brackets). But you need to edit the file `ImageCrawl/spiders/xxx_spider.py` before you run the command above.  
+In this project, the spider name can be `Flickr`, `Instagram`, `GoogleSearch`,`BingSearch`(no brackets). But you need to edit the file `ImageCrawl/spiders/xxx_spider.py` before you run the command above.  
 
 ---
 For ***Flickr***, you should have your own `api_key` (see [here](https://www.flickr.com/services/apps/create/apply/)), and decide your search tag. If you want to change other params, look at the file carefully or get help from [Flickr API](https://www.flickr.com/services/api/). 
@@ -44,6 +45,14 @@ For ***Google Image Search***, you should decide your search key word. If you wa
 class GoogleSearchSpider(scrapy.Spider):
     name = "GoogleSearch"
     key_word='your key_word'
+```
+---
+For ***Bing Image Search***, you should have your own `account Key` (see [here](https://datamarket.azure.com/dataset/bing/search)), and decide your search key word. If you want to change other params, look at the file carefully or get help from [Bing search API](http://go.microsoft.com/fwlink/?LinkID=272625&clcid=0x409). 
+```python
+class BingSearchSpider(scrapy.Spider):
+    name = "BingSearch"
+    key_word='your key_word'
+    acctKey = 'your account Key'
 ```
 You will get a `csv` folder that stores the crawl result(named with the beginning time of the program) and the images would be downloaded to folder `data` when the program finished.  
 If you want to change the image download directory, edit the last line in file `ImageCrawl/settings.py`:  
